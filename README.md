@@ -1,5 +1,5 @@
 # Exercise 1
-Given a KMS encrypted string, decrypt and write it as a secret in SecretsManager to allow any AWS service to use it.
+# Given a KMS encrypted string, decrypt and write it as a secret in SecretsManager to allow any AWS service to use it.
 
 The first thing that came to my mind when designing this solution, was Lambda functions for two reasons:
   1. Cost optimization: as it is valued positively, a lambda function is the cheapest way to implement this solution that I know.
@@ -9,7 +9,7 @@ The first thing that came to my mind when designing this solution, was Lambda fu
 Once that was defined, I didn't encounter any issues. Hardest part was dealing with the responses and formatting data.
 
 # Exercise 2
-Must deploy a service in ECS with a dummy container with a dummy hello world.
+# Must deploy a service in ECS with a dummy container with a dummy hello world.
 
 I'm familiar with CloudFormation templates but I've never deployed a service in ECS, so I looked for an example and
 I found something really close to what I'm asked to do. Based on that, I modified the code to fullfil the exercise requirements.
