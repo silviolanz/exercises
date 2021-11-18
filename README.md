@@ -19,7 +19,10 @@ CLI Command to create the stack:
 aws cloudformation create-stack --stack-name example-deployment --template-body file://./ex2.yml --capabilities CAPABILITY_NAMED_IAM --parameters 'ParameterKey=SubnetID,ParameterValue=subnet-xxxxxxxx'
 
 Regarding to plus points: 
+
 Cost optimization: This item goes a bit against "deployment without outage" as high-availability is more expensive. 
 The example uses Fargate and its cost depends on usage, so for this exercise Fargate would be cheaper than an EC2 instance with an EBS volume.
+
 Deployment without outage: What I would change if I want to avoid outages is Clusters DesiredCount to 2 or more.
+
 HTTPS: What I would change if I want a secure connection are SecurityGroup and Container Ports to 443, but that probably implies using an SSL Certificate.
