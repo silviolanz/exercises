@@ -16,6 +16,7 @@ I found something really close to what I'm asked to do. Based on that, I modifie
 Another thing I've never done before is working with containers, but I found a basic Nginx dockerfile to use as a dummy "hello-world".
 
 CLI Command to create the stack: 
+
 aws cloudformation create-stack --stack-name example-deployment --template-body file://./ex2.yml --capabilities CAPABILITY_NAMED_IAM --parameters 'ParameterKey=SubnetID,ParameterValue=subnet-xxxxxxxx'
 
 Regarding to plus points: 
